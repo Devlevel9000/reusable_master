@@ -14,3 +14,9 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -B package --file pom.xml
+    - name: Move artefact to staging dir
+      run: mkdir staging && cp target/*.jar staging
+    - uses: actions/upload-artifact@v3
+      with:
+        name: Package
+        path: staging
