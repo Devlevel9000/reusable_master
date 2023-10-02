@@ -1,6 +1,9 @@
 name: Java 17 Maven Build Workflow
 on:
   workflow_call:
+defaults:
+ run:
+  working-directory: ./app
 jobs:
   build_java_17_with_maven:
     runs-on: ubuntu-latest
