@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "author": "",
   "license": "ISC",
@@ -14,7 +14,8 @@
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
     "eslint": "^8.50.0",
-    "ts-node": "^10.9.1"
+    "ts-node": "^10.9.1",
+    "vitest": "^0.34.6"
   },
   "dependencies": {
     "semver": "^7.5.4",
